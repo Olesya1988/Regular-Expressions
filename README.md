@@ -1,0 +1,2 @@
+# Домашнее задание к лекции «Регулярные выражения»
+[![Build status](https://ci.appveyor.com/api/projects/status/4msfffjkqrt6ppeu?svg=true)](https://ci.appveyor.com/project/Olesya1988/regular-expressions)
