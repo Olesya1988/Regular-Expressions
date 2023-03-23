@@ -3,11 +3,9 @@ export default class Validator {
     this.name = name;
   }
 
-  validateUsername() {
-    const contentСheck = /[\d\w\-_]*/.test(this.name);
-    const startCheck = /^[^\d\-_]/.test(this.name);
-    const endCheck = /[^\d\-_]$/.test(this.name);
+  validateUsername() {    
+    const contentСheck = /(^[a-zA-Z])[\w-]+[a-zA-Z]$/.test(this.name);
     const repetitionСheck = /\d{4,}/g.test(this.name);
-    return contentСheck && startCheck && endCheck && !repetitionСheck;
+    return contentСheck && !repetitionСheck;
   }
 }

@@ -12,6 +12,7 @@ test.each([
   ['_Olesya', false],
   ['_Olesya777', false],
   ['Ole7777sya', false],
+  ['Олеся', false],
 ])('testing class Validator for %s name', (name, expected) => {
   const userName = new Validator(name);
   const result = userName.validateUsername();
