@@ -3,7 +3,7 @@ export default class Validator {
     this.name = name;
   }
 
-  validateUsername() {    
+  validateUsername() {
     const contentСheck = /(^[a-zA-Z])[\w-]+[a-zA-Z]$/.test(this.name);
     const repetitionСheck = /\d{4,}/g.test(this.name);
     return contentСheck && !repetitionСheck;
